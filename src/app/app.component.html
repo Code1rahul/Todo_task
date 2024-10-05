@@ -1,0 +1,31 @@
+<app-header />
+
+<main>
+  <ul id="users">
+    @for (user of users; track user.id) {
+    <li>
+      <app-user
+        [user]="user"
+        [selected]="user.id === selectedUserId"
+        (select)="OnSelectedUser($event)"
+      />
+    </li>
+    }
+  </ul>
+
+  @if (selectedUser) {
+  <app-tasks [userId]="selectedUser.id" [name]="selectedUser.name" />
+  } @else {
+  <p id="fallback">Select user to see their tasks!.</p>
+  }
+
+  <!-- this is Angular task -->
+</main>
+
+<!-- 
+this is an new version of for,if:
+@for( i of(like "in") array; track array.i  (means[i])for tracking the every user  )
+
+@if(condition){statement if condition is true}@else{this well execute!.}
+
+-->
