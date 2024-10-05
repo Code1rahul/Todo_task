@@ -1,3 +1,5 @@
+##install npm and angualar's new version then copy and paste it in your angular Project 
+
 # Essentials
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
