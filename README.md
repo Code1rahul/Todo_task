@@ -1,4 +1,4 @@
-##install npm and angualar's new version then copy and paste it in your angular Project 
+## install npm and angualar's new version then copy and paste it in your angular Project 
 
 # Essentials
 
